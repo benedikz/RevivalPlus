@@ -36,11 +36,11 @@ class RPL_CassetteCase : Inventory_Base {
       "RPL_Cassette_ZivotJeJenNahoda"
     };
 
-    override bool CanReceiveItemIntoCargo (EntityAI cargo)
+    override bool CanReceiveItemIntoCargo (EntityAI item)
     {
         foreach( string allowedCargo : m_AllowedCargo )
         {
-            if(cargo.GetType() == allowedCargo)
+            if(item.GetType() == allowedCargo)
                 return true;
         }
 

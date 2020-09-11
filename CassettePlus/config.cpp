@@ -385,6 +385,7 @@ class CfgVehicles {
   class Inventory_Base;
   class Container_Base;
 
+  
   class RPL_CassettePlayer_Base: Inventory_Base {
     scope = 0;
     displayName = "Rádio";
@@ -407,11 +408,11 @@ class CfgVehicles {
     class EnergyManager {
       hasIcon = 1;
       autoSwitchOff = 1;
-      autoSwitchOffWhenInCargo = 1;
+      autoSwitchOffWhenInCargo = 0;
       plugType = 1;
-      energyUsagePerSecond = 0.0099999998;
+      energyUsagePerSecond = 0.0019999998;
       attachmentAction = 1;
-      wetnessExposure = 0.1;
+      wetnessExposure = 0.12;
     };
     class MeleeModes {
       class Default {
