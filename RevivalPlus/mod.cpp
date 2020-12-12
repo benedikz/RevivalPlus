@@ -1,0 +1,10 @@
+name = "RevivalPlus";
+picture = "RevivalPlus/_Credits/images/rpl_logo.edds";
+logoSmall = "RevivalPlus/_Credits/images/rpl_logo.edds";
+logo = "RevivalPlus/_Credits/images/rpl_logo.edds";
+logoOver = "RevivalPlus/_Credits/images/rpl_logoOver.edds";
+tooltip = "RevivalPlus - 2020";
+overview = "...";
+action = "https://steamcommunity.com/sharedfiles/filedetails/?id=2095880869";
+author = "benedi.kz";
+version = "1.2";

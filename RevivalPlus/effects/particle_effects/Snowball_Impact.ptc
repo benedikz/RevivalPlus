@@ -1,0 +1,83 @@
+EffectDef {
+ Emitors {
+  EmitorDef emitor3 {
+   ShapeType Box
+   ShapeSize 0.1 0 0.1
+   ConeAngle 360 0 45
+   MaxNum 40
+   BirthRate 300
+   Offset 0 0.05 0
+   LocalTransform 0
+   Material "{5A939336004F3C25}Graphics/Particles/materials/character/blood_01.emat"
+   ScaleX 1
+   ScaleY 1
+   SizeMultiplier 0.5
+   SizeRND 0.5
+   RandomRotDir 1
+   RotMultiplier 0
+   VelAngle 0
+   RandomAngle 1
+   Velocity 2.5
+   VelocityRND 1
+   AirResistance 2
+   GravityMultiply 1
+   GravityMultiplyRND 0
+   AnimOnce 1
+   AnimFPS 10
+   LifetimeByAnim 0
+   RandomFrame 1
+   LifeTime 0.5
+   LifeTimeRND 0.6
+   Color {
+    0 1 1 1 1 1 1 1
+   }
+   Alpha {
+    0 0.51899 0.2061 0.08228 1 0
+   }
+   Size {
+    0 0.07595 1 1
+   }
+   EffectTime 0.05
+   Repeat 0
+  }
+  EmitorDef emitor3_blood_dust {
+   ShapeType Box
+   ShapeSize 0.1 0 0.1
+   ConeAngle 360 0 45
+   MaxNum 40
+   BirthRate 200
+   Offset 0 0 0
+   LocalTransform 0
+   Material "{5A939336004F3C25}Graphics/Particles/materials/character/blood_01.emat"
+   ScaleX 1
+   SizeMultiplier 0.4
+   SizeRND 0.5
+   RandomRotDir 0
+   RotMultiplier 0
+   VelAngle 0
+   RandomAngle 0
+   Velocity 1
+   VelocityRND 1
+   AirResistance 3
+   GravityMultiply 0.5
+   GravityMultiplyRND 0.5
+   AnimOnce 1
+   AnimFPS 10
+   LifetimeByAnim 0
+   RandomFrame 1
+   LifeTime 0.9
+   LifeTimeRND 0.2
+   Color {
+    0 1 1 1 1 1 1 1
+   }
+   Alpha {
+    0 1 0.27753 0.11392 1 0
+   }
+   Size {
+    0 0.07595 1 1
+   }
+   EffectTime 0.05
+   Repeat 0
+  }
+ }
+}
