@@ -2,10 +2,12 @@ class CfgPatches
 {
 	class RPL_Gear_Drinks
 	{
-		units[] = {"RPL_SodaCan_Kola","RPL_SodaCan_Panzer","RPL_SodaCan_Rasputin","RPL_SodaCan_Bardak","RPL_SodaCan_Kozlov","RPL_SodaCan_Zagoria","RPL_SodaCan_Zagoria_Klasik","RPL_SodaCanUsed_Kola","RPL_SodaCanUsed_Panzer","RPL_SodaCanUsed_Rasputin","RPL_SodaCanUsed_Bardak","RPL_SodaCanUsed_Kozlov","RPL_SodaCanUsed_Zagoria","RPL_SodaCanUsed_Zagoria_Klasik"};
+		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data"};
+		requiredAddons[] = {
+			"DZ_Data"
+		};
 	};
 };
 class CfgVehicles
@@ -247,7 +249,7 @@ class CfgVehicles
 			energy = -10;
 			water = 1;
 			nutritionalIndex = 55;
-			toxicity = 0;
+			toxicity = 0.05;
 			digestibility = 2;
 			agents = 16;
 		};

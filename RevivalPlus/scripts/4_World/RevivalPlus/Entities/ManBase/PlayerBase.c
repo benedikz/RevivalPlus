@@ -1,15 +1,27 @@
-modded class PlayerBase extends ManBase
+// extends ManBase
+modded class PlayerBase
 {
     static bool ZAddedCustomIK;
-
     override void Init()
     {
         if ( !ZAddedCustomIK ) {
-            DayzPlayerItemBehaviorCfg     toolsOneHanded = new DayzPlayerItemBehaviorCfg;
+            DayzPlayerItemBehaviorCfg toolsOneHanded = new DayzPlayerItemBehaviorCfg;
             toolsOneHanded.SetToolsOneHanded();
 
             GetDayZPlayerType().AddItemInHandsProfileIK("RPL_BaseballCap2_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/BandanaFH_ground.anm");
             GetDayZPlayerType().AddItemInHandsProfileIK("RPL_SodaCanUsed_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/soda_can.anm");
+
+            // AlcoholBottles
+            GetDayZPlayerType().AddItemInHandsProfileIK("RPL_Vodka_Novigradskaya", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/disinfectant_alcohol.anm");
+            GetDayZPlayerType().AddItemInHandsProfileIK("RPL_Zelena_Soborovska", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/disinfectant_alcohol.anm");
+            GetDayZPlayerType().AddItemInHandsProfileIK("RPL_EmptyBottleAlcohol", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/disinfectant_alcohol.anm");
+            GetDayZPlayerType().AddItemInHandsProfileIK("RPL_ImprovisedBottleAlcohol", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/disinfectant_alcohol.anm");
+            GetDayZPlayerType().AddItemInHandsProfileIK("RPL_ImprovisedAlcohol_Spirit", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/disinfectant_alcohol.anm");
+            GetDayZPlayerType().AddItemInHandsProfileIK("RPL_ImprovisedAlcohol_Vodka", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/disinfectant_alcohol.anm");
+
+            // Snowballs
+            GetDayZPlayerType().AddItemInHandsProfileIK("RPL_Snowball", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/stone.anm");
+            GetDayZPlayerType().AddItemInHandsProfileIK("RPL_SmallSnowball", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/orange.anm");
 
             // Documents
             GetDayZPlayerType().AddItemInHandsProfileIK("RPL_SmallDocument_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/Seeds_Tomato.anm");
@@ -30,9 +42,14 @@ modded class PlayerBase extends ManBase
             GetDayZPlayerType().AddItemInHandsProfileIK("RPL_PumpkinStack", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/pumpkin_sliced.anm");
             GetDayZPlayerType().AddItemInHandsProfileIK("RPL_PlumStack", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/plum.anm");
 
-
             ZAddedCustomIK = true;
         }
         super.Init();
+    }
+
+    override void SetActions()
+    {
+      super.SetActions();
+      AddAction(ActionVehicleHorn);
     }
 };

@@ -182,5 +182,10 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe( new DeColor_AKWoodBttstck_PB );
     RegisterRecipe( new DeColor_AKWoodHndgrd_PB );
     RegisterRecipe( new DeColor_FalOeBttstck_PB );
+
+    /************ DISTILLING - ALCOHOL ************/
+    RegisterRecipe( new CraftImprovisedAlcoholBottle );
+    RegisterRecipe( new CraftVodka );
+    //RegisterRecipe( new CraftPlumSpirit );
   }
 };
