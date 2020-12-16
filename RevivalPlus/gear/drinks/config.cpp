@@ -2,6 +2,9 @@ class CfgPatches
 {
 	class RPL_Gear_Drinks
 	{
+		author = "Benedikz";
+		name = "RevivalPlus - Gear Drinks Module";
+		url = "https://benedikz.space/";
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
@@ -15,77 +18,71 @@ class CfgVehicles
 	class Inventory_Base;
 	class Edible_Base;
 	class Bottle_Base;
-	class SodaCan_Pipsi;
 
-	class RPL_SodaCan_Kola: SodaCan_Pipsi
+	class SodaCan_Pipsi;
+	class RPL_SodaCan_Base : SodaCan_Pipsi
+	{
+		scope = 0;
+		weight = 330;
+		destroyOnEmpty = 0;
+		varQuantityDestroyOnMin = 0;
+	};
+	class RPL_SodaCan_Kola: RPL_SodaCan_Base
 	{
 		scope = 2;
 		displayName = "#STR_SodaCan_Kola";
 		descriptionShort = "#STR_SodaCan_Kola_D";
-		destroyOnEmpty = 0;
-		varQuantityDestroyOnMin = 0;
 		hiddenSelectionsTextures[] = {"RevivalPlus\gear\drinks\data\can_kola_co.paa"};
 	};
-	class RPL_SodaCan_Panzer: SodaCan_Pipsi
+	class RPL_SodaCan_Panzer: RPL_SodaCan_Base
 	{
 		scope = 2;
 		displayName = "#STR_SodaCan_Panzer";
 		descriptionShort = "#STR_SodaCan_Panzer_D";
-		destroyOnEmpty = 0;
-		varQuantityDestroyOnMin = 0;
 		hiddenSelectionsTextures[] = {"RevivalPlus\gear\drinks\data\can_panzer_co.paa"};
 	};
-	class RPL_SodaCan_Rasputin: SodaCan_Pipsi
+	class RPL_SodaCan_Rasputin: RPL_SodaCan_Base
 	{
 		scope = 2;
 		displayName = "#STR_SodaCan_Rasputin";
 		descriptionShort = "#STR_SodaCan_Rasputin_D";
-		destroyOnEmpty = 0;
-		varQuantityDestroyOnMin = 0;
 		hiddenSelectionsTextures[] = {"RevivalPlus\gear\drinks\data\can_rasputin_co.paa"};
 	};
-	class RPL_SodaCan_Bardak: SodaCan_Pipsi
+	class RPL_SodaCan_Bardak: RPL_SodaCan_Base
 	{
 		scope = 2;
 		displayName = "#STR_SodaCan_Bardak";
 		descriptionShort = "#STR_SodaCan_Bardak_D";
-		destroyOnEmpty = 0;
-		varQuantityDestroyOnMin = 0;
 		hiddenSelectionsTextures[] = {"RevivalPlus\gear\drinks\data\can_bardak_co.paa"};
 	};
-	class RPL_SodaCan_Kozlov: SodaCan_Pipsi
+	class RPL_SodaCan_Kozlov: RPL_SodaCan_Base
 	{
 		scope = 2;
 		displayName = "#STR_SodaCan_Kozlov";
 		descriptionShort = "#STR_SodaCan_Kozlov_D";
-		destroyOnEmpty = 0;
-		varQuantityDestroyOnMin = 0;
 		hiddenSelectionsTextures[] = {"RevivalPlus\gear\drinks\data\can_kozlov_co.paa"};
 	};
-	class RPL_SodaCan_Zagoria: SodaCan_Pipsi
+	class RPL_SodaCan_Zagoria: RPL_SodaCan_Base
 	{
 		scope = 2;
 		displayName = "#STR_SodaCan_Zagoria";
 		descriptionShort = "#STR_SodaCan_Zagoria_D";
-		destroyOnEmpty = 0;
-		varQuantityDestroyOnMin = 0;
 		hiddenSelectionsTextures[] = {"RevivalPlus\gear\drinks\data\can_zagoria_co.paa"};
 	};
-	class RPL_SodaCan_Zagoria_Klasik: SodaCan_Pipsi
+	class RPL_SodaCan_Zagoria_Klasik: RPL_SodaCan_Base
 	{
 		scope = 2;
 		displayName = "#STR_SodaCan_Zagoria2";
 		descriptionShort = "#STR_SodaCan_Zagoria2_D";
-		destroyOnEmpty = 0;
-		varQuantityDestroyOnMin = 0;
 		hiddenSelectionsTextures[] = {"RevivalPlus\gear\drinks\data\can_zagoria2_co.paa"};
 	};
+
 	class RPL_SodaCanUsed_ColorBase: Edible_Base
 	{
 		model = "\dz\gear\drinks\SodaCan_Used.p3d";
 		stackedRandom = 0;
 		itemSize[] = {1,2};
-		weight = 10;
+		weight = 30;
 		stackedUnit = "";
 		varQuantityInit = 0;
 		varQuantityMin = 0;
@@ -183,31 +180,44 @@ class CfgVehicles
 	class Canteen;
 	class RPL_Canteen_Black: Canteen
 	{
-		hiddenSelections[] = {"zbytek"};
-		hiddenSelectionsTextures[] = {"RevivalPlus\gear\drinks\data\canteen_black_co.paa"};
+		hiddenSelections[] = {
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] = {
+			"RevivalPlus\gear\drinks\data\canteen_black_co.paa"
+		};
 	};
 	class RPL_Canteen_Olive: Canteen
 	{
 		hiddenSelections[] = {"zbytek"};
-		hiddenSelectionsTextures[] = {"RevivalPlus\gear\drinks\data\canteen_olive_co.paa"};
+		hiddenSelectionsTextures[] = {
+			"RevivalPlus\gear\drinks\data\canteen_olive_co.paa"
+		};
 	};
+
 	class WaterBottle;
 	class RPL_WaterBottle_Milk: WaterBottle
 	{
 		hiddenSelections[] = {"zbytek"};
-		hiddenSelectionsTextures[] = {"RevivalPlus\gear\drinks\data\waterbottle_milk_ca.paa"};
+		hiddenSelectionsTextures[] = {
+			"RevivalPlus\gear\drinks\data\waterbottle_milk_ca.paa"
+		};
 	};
 
 	class DisinfectantAlcohol;
 	class Vodka;
-	class RPL_Vodka_Novigradskaya : DisinfectantAlcohol
+	class RPL_Vodka_Novigradskaya : Vodka
 	{
 		scope = 2;
 		displayName = "$STR_RPL_Vodka_Novigradskaya";
 		descriptionShort = "$STR_RPL_Vodka_Novigradskaya_D";
 		model = "\dz\gear\medical\alfa.p3d";
-		hiddenSelections[] = {"zbytek"};
-		hiddenSelectionsTextures[] = {"RevivalPlus\gear\drinks\data\novigradskaya_ca.paa"};
+		hiddenSelections[] = {
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] = {
+			"RevivalPlus\gear\drinks\data\novigradskaya_ca.paa"
+		};
 		isMeleeWeapon = 1;
 		weight = 200;
 		itemSize[] = {1,2};
@@ -216,6 +226,7 @@ class CfgVehicles
 		varQuantityMax = 200;
 		varQuantityDestroyOnMin = 1;
 		varLiquidTypeInit = 2048;
+		/*
 		class Nutrition
 		{
 			fullnessIndex = 1;
@@ -226,6 +237,7 @@ class CfgVehicles
 			digestibility = 2;
 			agents = 16;
 		};
+		*/
 	};
 	class RPL_Zelena_Soborovska : DisinfectantAlcohol
 	{
@@ -233,8 +245,12 @@ class CfgVehicles
 		displayName = "$STR_RPL_Zelena_Soborovska";
 		descriptionShort = "$STR_RPL_Zelena_Soborovska_D";
 		model = "\dz\gear\medical\alfa.p3d";
-		hiddenSelections[] = {"zbytek"};
-		hiddenSelectionsTextures[] = {"RevivalPlus\gear\drinks\data\soborovska_zelena_ca.paa"};
+		hiddenSelections[] = {
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] = {
+			"RevivalPlus\gear\drinks\data\soborovska_zelena_ca.paa"
+		};
 		isMeleeWeapon = 1;
 		weight = 200;
 		itemSize[] = {1,2};
@@ -249,7 +265,7 @@ class CfgVehicles
 			energy = -10;
 			water = 1;
 			nutritionalIndex = 55;
-			toxicity = 0.05;
+			toxicity = 0.02;
 			digestibility = 2;
 			agents = 16;
 		};
@@ -261,8 +277,12 @@ class CfgVehicles
 		displayName = "$STR_RPL_EmptyBottleAlcohol";
 		descriptionShort = "$STR_RPL_EmptyBottleAlcohol_D";
 		model = "\dz\gear\medical\alfa.p3d";
-		hiddenSelections[] = {"zbytek"};
-		hiddenSelectionsTextures[] = {"RevivalPlus\gear\drinks\data\bottle_empty_ca.paa"};
+		hiddenSelections[] = {
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] = {
+			"RevivalPlus\gear\drinks\data\bottle_empty_ca.paa"
+		};
 		weight = 50;
 		itemSize[] = {1,2};
 	};
@@ -272,8 +292,12 @@ class CfgVehicles
 		displayName = "$STR_RPL_ImprovisedBottleAlcohol";
 		descriptionShort = "$STR_RPL_ImprovisedBottleAlcohol_D";
 		model = "\dz\gear\medical\alfa.p3d";
-		hiddenSelections[] = {"zbytek"};
-		hiddenSelectionsTextures[] = {"RevivalPlus\gear\drinks\data\bottle_sticker_ca.paa"};
+		hiddenSelections[] = {
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] = {
+			"RevivalPlus\gear\drinks\data\bottle_sticker_ca.paa"
+		};
 		weight = 50;
 		itemSize[] = {1,2};
 	};
@@ -284,9 +308,13 @@ class CfgVehicles
 		displayName = "$STR_RPL_ImprovisedBottleAlcohol_Spirit";
 		descriptionShort = "$STR_RPL_ImprovisedBottleAlcohol_Spirit_D";
 		model = "\dz\gear\medical\alfa.p3d";
-		hiddenSelections[] = {"zbytek"};
-		hiddenSelectionsTextures[] = {"RevivalPlus\gear\drinks\data\improvisedbottle_slivovice_ca.paa"};
-		weight = 50;
+		hiddenSelections[] = {
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] = {
+			"RevivalPlus\gear\drinks\data\improvisedbottle_slivovice_ca.paa"
+		};
+		weight = 200;
 		itemSize[] = {1,2};
 		varQuantityInit = 200;
 		varQuantityMin = 0;
@@ -300,9 +328,13 @@ class CfgVehicles
 		displayName = "$STR_RPL_ImprovisedBottleAlcohol_Vodka";
 		descriptionShort = "$STR_RPL_ImprovisedBottleAlcohol_Vodka_D";
 		model = "\dz\gear\medical\alfa.p3d";
-		hiddenSelections[] = {"zbytek"};
-		hiddenSelectionsTextures[] = {"RevivalPlus\gear\drinks\data\improvisedbottle_vodka_ca.paa"};
-		weight = 50;
+		hiddenSelections[] = {
+			"zbytek"
+		};
+		hiddenSelectionsTextures[] = {
+			"RevivalPlus\gear\drinks\data\improvisedbottle_vodka_ca.paa"
+		};
+		weight = 200;
 		itemSize[] = {1,2};
 		varQuantityInit = 200;
 		varQuantityMin = 0;
