@@ -24,7 +24,7 @@ modded class MissionGameplay
       super.OnInit();
       Print("[R_ENVIRONMENT] Loading <ENV_Players> ...");
 
-      if ( z_WorldNameConverted == "chernarusplus" || z_WorldNameConverted == "chernarusplusgloom")
+      if ( z_WorldNameConverted == "chernarusplus" || z_WorldNameConverted == "chernarusplusgloom" )
       {
         /*
           "Ordinace Kozlovka"
@@ -390,7 +390,7 @@ modded class MissionGameplay
         //SpawnObject( "SPL_Static_Flag_RussianFederation", "5514.133789 312.030609 7337.627930", "-80.000000 0.000000 0.000000" );
         // Krest
         SpawnObject( "bldr_Cemetery_Tombstone3", "5570.462402 308.235443 7287.851563", "83.000008 -5.000000 -4.000000" );
-        // Hovna, hovna, hovna jsou to HOVNA!
+        /* Hovna, hovna, hovna jsou to HOVNA!
         SpawnObject( "ShitGround", "5554.405762 307.240967 7373.261230", "0.000000 0.000000 0.000000" );
         SpawnObject( "ShitGround", "5547.743652 307.370422 7369.104492", "0.000000 0.000000 0.000000" );
         SpawnObject( "ShitGround", "5541.628906 307.633240 7377.547363", "0.000000 0.000000 0.000000" );
@@ -403,6 +403,7 @@ modded class MissionGameplay
         SpawnObject( "ShitGround", "5528.307129 307.794861 7358.455566", "0.000000 0.000000 0.000000" );
         SpawnObject( "ShitGround", "5542.534180 307.427368 7356.950195", "0.000000 0.000000 0.000000" );
         SpawnObject( "ShitGround", "5525.584961 307.845856 7354.876465", "0.000000 0.000000 0.000000" );
+        */
         // Kaplička
         SpawnObject( "Land_Chapel2_White", "5458.512207 312.698181 7271.704102", "-46.999992 0.000000 0.000000" );
         SpawnObject( "bldr_Decal_dirt_damage_long2", "5459.132813 310.175262 7270.968262", "-49.000000 0.000000 0.000000" );
@@ -450,6 +451,49 @@ modded class MissionGameplay
         SpawnObject( "bldr_wall_tin_5", "5548.585449 308.654724 7324.998047", "10.500000 0.000000 0.000000" );
         SpawnObject( "bldr_wall_tin_5", "5551.643066 308.670990 7324.455078", "9.500000 0.000000 0.000000" );
         SpawnObject( "bldr_wall_tin_5", "5554.769043 308.626587 7326.474609", "-79.500000 0.000000 0.000000" );
+        // Nějaká další pičovina
+        SpawnObject( "bldr_misc_pallet", "5545.207031 308.779785 7302.327637", "1.999991 55.000019 -0.000009" );
+        SpawnObject( "Land_wreck_truck01_aban2_blue", "5525.957031 307.831757 7345.250977", "-75.000000 0.000000 0.000000" );
+        SpawnObject( "Land_Misc_Through_Static", "5527.785645 309.478699 7278.073730", "0.000000 0.000000 0.000000" );
+        // Stromy a další úpravy
+        SpawnObject( "bldr_plnt_t_malusDomestica_1s", "5551.987305 311.793060 7271.551758", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_t_malusDomestica_1s", "5550.777832 312.353821 7265.202637", "90.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_t_malusDomestica_1s", "5550.038574 312.684174 7259.876953", "-103.999969 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_t_malusDomestica_3s", "5519.949707 316.719727 7265.144531", "0.000000 -1.000000 0.000000" );
+        SpawnObject( "bldr_Misc_HayStack", "5560.673340 310.205597 7260.907227", "1.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_Misc_HayStack", "5574.099121 309.692963 7257.775879", "0.000000 -2.000000 2.000000" );
+        SpawnObject( "bldr_Misc_HayStack", "5587.204590 309.035126 7255.286133", "0.000000 -3.000000 3.000001" );
+        SpawnObject( "bldr_Misc_HayStack", "5600.288574 308.200531 7252.469238", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_Misc_HayStack", "5613.730469 307.363220 7248.160645", "0.000000 1.000000 2.000000" );
+        SpawnObject( "bldr_Misc_HayStack", "5629.709473 306.355652 7242.467285", "0.000000 -2.000000 3.999999" );
+        SpawnObject( "bldr_Misc_HayStack", "5632.870117 307.625977 7223.256348", "0.000000 -2.000000 4.000001" );
+        SpawnObject( "bldr_Misc_HayStack", "5614.448242 308.721527 7229.433594", "0.000000 -4.000000 7.000000" );
+        SpawnObject( "bldr_Misc_HayStack", "5597.643066 309.785126 7233.255371", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_Misc_HayStack", "5581.796387 310.601196 7236.177246", "0.000000 -3.000000 4.999999" );
+        SpawnObject( "bldr_Misc_HayStack", "5565.070313 311.403412 7239.185059", "0.000000 -3.000000 5.000000" );
+        SpawnObject( "bldr_Misc_HayStack", "5545.002441 312.093719 7241.975586", "-1.000000 -5.000000 2.000000" );
+        SpawnObject( "Land_Wreck_Tractor", "5644.398926 312.120575 7165.786133", "0.000000 -6.000000 0.000000" );
+        SpawnObject( "bldr_wreck_trailer_cistern", "5644.645508 310.504303 7170.503906", "90.000000 -3.000000 -7.000004" );
+        SpawnObject( "bldr_plnt_b_corylusAvellana_2s", "5616.213379 307.704468 7295.698730", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_b_corylusAvellana_1f", "5611.447754 306.409454 7301.341797", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_b_crataegusLaevigata_2s", "5611.019531 308.684326 7288.651367", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_b_naked_2s", "5609.712402 308.184296 7283.560547", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_b_prunusSpinosa_1s", "5625.463379 306.333710 7319.437012", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_t_prunusDomestica_2s", "5617.638184 310.075928 7303.555176", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_b_prunusSpinosa_2s", "5620.681152 307.601379 7316.859863", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_b_prunusSpinosa_1s", "5621.079102 306.375031 7312.250977", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_b_corylusAvellana_1f", "5617.509277 306.176056 7307.775879", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_b_corylusAvellana_1f", "5619.634277 306.325439 7329.661621", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_b_corylusAvellana_1f", "5621.112305 306.155823 7319.356934", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_b_corylusAvellana_2s", "5620.106934 307.712677 7324.405273", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_b_corylusAvellana_2s", "5628.609863 307.465363 7274.616699", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_b_corylusAvellana_2s", "5589.694336 309.617004 7267.582520", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_b_crataegusLaevigata_2s", "5605.741699 309.513458 7280.872070", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_b_crataegusLaevigata_2s", "5615.510254 308.393524 7291.034668", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_b_crataegusLaevigata_1s", "5620.431641 306.676758 7308.731445", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_plnt_b_crataegusLaevigata_2s", "5612.372070 308.463287 7304.013184", "0.000000 0.000000 0.000000" );
+        SpawnObject( "Land_Wreck_Caravan_WGreen", "5523.204590 310.029999 7322.160645", "0.000000 -1.000000 0.000000" );
+        SpawnObject( "Land_Wreck_sed01_aban1_police", "5426.395508 310.957916 7213.184570", "0.000000 1.000000 0.000000" );
         // End of "Farma - Benedikz"
 
         /*

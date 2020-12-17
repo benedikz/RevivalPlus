@@ -24,7 +24,7 @@ modded class MissionGameplay
       super.OnInit();
       Print("[R_ENVIRONMENT] Loading <ENV_ToxicZones> ...");
 
-      if ( z_WorldNameConverted == "chernarusplus" || z_WorldNameConverted == "chernarusplusgloom")
+      if ( z_WorldNameConverted == "chernarusplus" || z_WorldNameConverted == "chernarusplusgloom" )
       {
         /*
           "Tisy"

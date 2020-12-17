@@ -24,7 +24,7 @@ modded class MissionServer
     string z_WorldNameConverted = GetGame().GetWorldName();
     int Z_Z = z_WorldNameConverted.ToLower();
 
-    if ( z_WorldNameConverted == "chernarusplus" || z_WorldNameConverted == "chernarusplusgloom")
+    if ( z_WorldNameConverted == "chernarusplus" || z_WorldNameConverted == "chernarusplusgloom" )
     {
     }
   }

@@ -33,7 +33,7 @@ class StackCarpFillets extends RecipeBase
 		m_IngredientDestroy[1] = true;
 		m_IngredientUseSoftSkills[1] = false;
     /*************************************************************/
-    AddResult("RPL_CarpStack");
+    AddResult("RPL_CarpFilletStack");
     /*************************************************************/
 		m_ResultSetFullQuantity[0] = false;   // true = set full quantity, false = do nothing
 		m_ResultSetQuantity[0] = 2;           // -1 = do nothing

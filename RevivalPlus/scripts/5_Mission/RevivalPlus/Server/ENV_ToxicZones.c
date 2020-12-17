@@ -24,7 +24,7 @@ modded class MissionServer
       super.OnInit();
       Print("[R_ENVIRONMENT] Loading <ENV_ToxicZones> ...");
 
-      if ( z_WorldNameConverted == "chernarusplus" || z_WorldNameConverted == "chernarusplusgloom")
+      if ( z_WorldNameConverted == "chernarusplus" || z_WorldNameConverted == "chernarusplusgloom" )
       {
         /*
           "Tisy"
@@ -707,7 +707,7 @@ modded class MissionServer
         SpawnObject( "Land_Container_1Mo", "4537.187012 318.051971 8285.112305", "0.000000 0.000000 -1.000000" );
         SpawnObject( "Land_Wreck_sed01_aban1_black", "4456.233398 314.564819 8285.639648", "-55.999992 0.000000 0.000000" );
         // End of "Verešník"
-        
+
       }
   }
 

@@ -24,7 +24,7 @@ modded class MissionGameplay
       string z_WorldNameConverted = GetGame().GetWorldName();
       int Z_Z = z_WorldNameConverted.ToLower();
 
-      if ( z_WorldNameConverted == "chernarusplus" || z_WorldNameConverted == "chernarusplusgloom")
+      if ( z_WorldNameConverted == "chernarusplus" || z_WorldNameConverted == "chernarusplusgloom" )
       {
         /*
           "Letiště Krasnostav"
@@ -1227,6 +1227,29 @@ modded class MissionGameplay
         SpawnObject( "bldr_wreck_ural", "5904.609375 286.193054 9933.854492", "168.000000 9.000002 3.999998" );
         SpawnObject( "CraterLong", "5904.836426 284.719818 9933.412109", "0.000000 0.000000 0.000000" );
         // End of "Grišino and shit"
+
+        /*
+          VÁNOCE V SOBORU
+        */
+        SpawnObject( "ChristmasTree_Green", "7043.374512 304.404877 7750.868652", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_Misc_Table_Market", "7035.511230 297.061829 7742.599121", "-53.999992 0.000000 0.000000" );
+        SpawnObject( "bldr_scale", "7035.894043 298.000000 7743.181641", "21.999998 0.000000 0.000000" );
+        SpawnObject( "bldr_Misc_Table_Market", "7045.309082 297.425446 7731.975098", "-179.999985 0.000000 0.000000" );
+        SpawnObject( "bldr_bucket", "7035.971191 297.745941 7743.391113", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_Carp", "7035.963379 297.845917 7743.402832", "0.000000 9.000000 17.999998" );
+        SpawnObject( "Land_Misc_Through_Static", "7032.918457 296.628418 7742.903320", "48.000004 0.000000 -3.000001" );
+        SpawnObject( "bldr_Carp", "7032.348633 296.491974 7743.605469", "-49.999992 90.000000 179.999985" );
+        SpawnObject( "bldr_Carp", "7032.651855 296.512268 7743.255371", "179.999985 90.000000 0.000009" );
+        SpawnObject( "bldr_Carp", "7033.738281 296.594391 7742.004395", "179.999985 90.000000 0.000009" );
+        SpawnObject( "bldr_Carp", "7033.518555 296.588348 7742.360352", "179.999985 90.000000 25.999998" );
+        SpawnObject( "bldr_Carp", "7032.996582 296.538116 7742.833496", "-27.999977 85.000008 -0.000009" );
+        SpawnObject( "bldr_Carp", "7032.890137 296.528046 7743.020020", "-101.000008 86.000015 132.000031" );
+        SpawnObject( "bldr_Slum_Roof3", "7034.383301 297.198792 7744.613281", "-47.000004 0.000000 0.000000" );
+        SpawnObject( "bldr_ch_mod_c", "7034.645508 296.543304 7742.645020", "-23.000013 0.000000 0.000000" );
+        SpawnObject( "bldr_Slum_Roof4", "7043.903320 297.478546 7730.258789", "0.000000 0.000000 0.000000" );
+        SpawnObject( "bldr_kitchen_chair_a", "7044.776367 296.946411 7730.985352", "-169.999969 0.000000 0.000000" );
+        SpawnObject( "bldr_Tribune", "7061.163574 299.681030 7729.644043", "144.999969 0.000000 0.000000" );
+      // End of "VÁNOCE V SOBORU"
 
       }
   }
