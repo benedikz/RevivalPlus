@@ -186,4 +186,40 @@ class CfgVehicles
 			"RevivalPlus\gear\camping\data\wooden_case_white_co.paa"
 		};
 	};
+
+	class RPL_SupplyCrate_Base : WoodenCrate
+	{
+		scope = 0;
+		displayName = "$STR_SupplyCrate";
+		descriptionShort = "$STR_SupplyCrate_D";
+		hiddenSelections[] = {"camoGround"};
+		hiddenSelectionsTextures[] = {""};
+		itemSize[] = {12, 12};
+		inventorySlot[] = {""};
+		class Cargo
+		{
+			itemsCargoSize[] = {10,8};
+		};
+	};
+	class RPL_SupplyCrate_TisyV1 : RPL_SupplyCrate_Base
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {
+			"RevivalPlus\gear\camping\data\wooden_case_tisy_co.paa"
+		};
+	};
+	class RPL_SupplyCrate_TisyV2 : RPL_SupplyCrate_Base
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {
+			"RevivalPlus\gear\camping\data\wooden_case_tisy2_co.paa"
+		};
+	};
+	class RPL_SupplyCrate_TisyV3 : RPL_SupplyCrate_Base
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {
+			"RevivalPlus\gear\camping\data\wooden_case_tisy3_co.paa"
+		};
+	};
 };

@@ -30,7 +30,7 @@ class CfgVehicles
 
 	class RPL_DiplomatCard_Raskolnikov : RPL_SmallDocument_ColorBase
 	{
-		scope = 2;
+		scope = 0;
 		displayName = "$STR_RPL_DiplomatCard";
 		descriptionShort = "$STR_RPL_DiplomatCard_D";
 		model = "\dz\gear\consumables\Paper.p3d";

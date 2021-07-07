@@ -19,6 +19,7 @@ class CfgVehicles
 	class Paper: Inventory_Base
 	{
 		weight = 1;
+		stackedUnit = "g";
 		canBeSplit = 1;
 		varQuantityInit = 1;
 		varQuantityMin = 0;
@@ -333,7 +334,7 @@ class CfgAmmo
 	class RPL_MeleeSnowball : MeleeDamage
 	{
 		hitAnimation = 1;
-		affectSkeleton = 0.7;
+		affectSkeleton = 0.75;
 		class DamageApplied
 		{
 			type = "Melee";
@@ -354,7 +355,7 @@ class CfgAmmo
 	class RPL_MeleeSmallSnowball : MeleeDamage
 	{
 		hitAnimation = 1;
-		affectSkeleton = 0.7;
+		affectSkeleton = 0.75;
 		class DamageApplied
 		{
 			type = "Melee";

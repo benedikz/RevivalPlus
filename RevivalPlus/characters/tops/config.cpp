@@ -11,6 +11,17 @@ class CfgPatches {
 class CfgVehicles {
   class Clothing_Base;
 
+  class NurseDress_ColorBase;
+  class RPL_NurseDress_Black: NurseDress_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\nursedress_black_co.paa",
+      "RevivalPlus\characters\tops\data\nursedress_black_co.paa",
+      "RevivalPlus\characters\tops\data\nursedress_black_co.paa"
+    };
+	};
+
   class TTsKOJacket_ColorBase;
   class RPL_TTsKOJacket_Flora: TTsKOJacket_ColorBase {
     scope = 2;
@@ -39,6 +50,15 @@ class CfgVehicles {
       "RevivalPlus\characters\tops\data\sweater_green_rusarmy_g_co.paa",
       "RevivalPlus\characters\tops\data\sweater_green_rusarmy_co.paa",
       "RevivalPlus\characters\tops\data\sweater_green_rusarmy_co.paa"
+    };
+  };
+  class RPL_Sweater_DarkGray: Sweater_ColorBase {
+    scope = 2;
+    visibilityModifier = 0.95;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\sweater_darkgrey_g_co.paa",
+      "RevivalPlus\characters\tops\data\sweater_darkgrey_co.paa",
+      "RevivalPlus\characters\tops\data\sweater_darkgrey_co.paa"
     };
   };
 
@@ -488,6 +508,90 @@ class CfgVehicles {
       "RevivalPlus\characters\tops\data\tshirt_stripes_greywhite_co.paa"
     };
   };
+  class RPL_TShirt_Police: RPL_TShirt_ColorBase {
+    scope = 2;
+    displayName = "#STR_TShirt_Police";
+    descriptionShort = "#STR_TShirt_Police_D";
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\tshirt_police_g_co.paa",
+      "RevivalPlus\characters\tops\data\tshirt_police_co.paa",
+      "RevivalPlus\characters\tops\data\tshirt_police_co.paa"
+    };
+  };
+  class RPL_TShirt_Astra: RPL_TShirt_ColorBase {
+    scope = 2;
+    displayName = "#STR_TShirt_Astra";
+    descriptionShort = "#STR_TShirt_Astra_D";
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\tshirt_astra_g_co.paa",
+      "RevivalPlus\characters\tops\data\tshirt_astra_co.paa",
+      "RevivalPlus\characters\tops\data\tshirt_astra_co.paa"
+    };
+  };
+  class RPL_TShirt_White_Chernarus: RPL_TShirt_ColorBase {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\tshirt_white_chernarus_g_co.paa",
+      "RevivalPlus\characters\tops\data\tshirt_white_chernarus_co.paa",
+      "RevivalPlus\characters\tops\data\tshirt_white_chernarus_co.paa"
+    };
+  };
+
+  /* Half-Shirts */
+  class RPL_HalfShirt_Base: RPL_TShirt_ColorBase {
+    scope = 0;
+    displayName = "#STR_HalfShirt_Base";
+    descriptionShort = "#STR_HalfShirt_Base_D";
+  };
+  class RPL_HalfShirt_White: RPL_HalfShirt_Base {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\halfshirt_white_g_co.paa",
+      "RevivalPlus\characters\tops\data\halfshirt_white_co.paa",
+      "RevivalPlus\characters\tops\data\halfshirt_white_co.paa"
+    };
+  };
+  class RPL_HalfShirt_Blue: RPL_HalfShirt_Base {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\halfshirt_blue_g_co.paa",
+      "RevivalPlus\characters\tops\data\halfshirt_blue_co.paa",
+      "RevivalPlus\characters\tops\data\halfshirt_blue_co.paa"
+    };
+  };
+  class RPL_HalfShirt_Gray: RPL_HalfShirt_Base {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\halfshirt_gray_g_co.paa",
+      "RevivalPlus\characters\tops\data\halfshirt_gray_co.paa",
+      "RevivalPlus\characters\tops\data\halfshirt_gray_co.paa"
+    };
+  };
+  class RPL_HalfShirt_Red: RPL_HalfShirt_Base {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\halfshirt_red_g_co.paa",
+      "RevivalPlus\characters\tops\data\halfshirt_red_co.paa",
+      "RevivalPlus\characters\tops\data\halfshirt_red_co.paa"
+    };
+  };
+  class RPL_HalfShirt_Violet: RPL_HalfShirt_Base {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\halfshirt_violet_g_co.paa",
+      "RevivalPlus\characters\tops\data\halfshirt_violet_co.paa",
+      "RevivalPlus\characters\tops\data\halfshirt_violet_co.paa"
+    };
+  };
+  class RPL_HalfShirt_Yellow: RPL_HalfShirt_Base {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\halfshirt_yellow_g_co.paa",
+      "RevivalPlus\characters\tops\data\halfshirt_yellow_co.paa",
+      "RevivalPlus\characters\tops\data\halfshirt_yellow_co.paa"
+    };
+  };
+
 
   class Hoodie_ColorBase;
   // NAHRADIT NOVEJMA (GROUND TEXTURY)
@@ -934,6 +1038,123 @@ class CfgVehicles {
       "RevivalPlus\characters\tops\data\tracksuit_jacket_loverboy_g_co.paa",
       "RevivalPlus\characters\tops\data\tracksuit_jacket_loverboy_co.paa",
       "RevivalPlus\characters\tops\data\tracksuit_jacket_loverboy_co.paa"
+    };
+  };
+  class RPL_TrackSuitJacket_Bohous: TrackSuitJacket_ColorBase {
+    scope = 2;
+    visibilityModifier = 0.85;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\tracksuit_bohous_g_co.paa",
+      "RevivalPlus\characters\tops\data\tracksuit_bohous_co.paa",
+      "RevivalPlus\characters\tops\data\tracksuit_bohous_co.paa"
+    };
+    hiddenSelectionsMaterials[] = {
+      "RevivalPlus\characters\tops\data\tracksuit_plane.rvmat",
+      "RevivalPlus\characters\tops\data\tracksuit_plane.rvmat",
+      "RevivalPlus\characters\tops\data\tracksuit_plane.rvmat"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = {
+            {1.0,{"RevivalPlus\characters\tops\data\tracksuit_plane.rvmat"}},
+            {0.7,{"RevivalPlus\characters\tops\data\tracksuit_plane.rvmat"}},
+            {0.5,{"RevivalPlus\characters\tops\data\tracksuit_plane_damage.rvmat"}},
+            {0.3,{"RevivalPlus\characters\tops\data\tracksuit_plane_damage.rvmat"}},
+            {0.0,{"RevivalPlus\characters\tops\data\tracksuit_plane_destruct.rvmat"}}
+          };
+				};
+			};
+    };
+  };
+
+  class RPL_TrackSuitJacket_PlaneBase: TrackSuitJacket_ColorBase {
+    scope = 0;
+    visibilityModifier = 0.85;
+    hiddenSelectionsTextures[] = {
+      "",
+      "",
+      ""
+    };
+    hiddenSelectionsMaterials[] = {
+      "RevivalPlus\characters\tops\data\tracksuit_plane.rvmat",
+      "RevivalPlus\characters\tops\data\tracksuit_plane.rvmat",
+      "RevivalPlus\characters\tops\data\tracksuit_plane.rvmat"
+    };
+    class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 100;
+					healthLevels[] = {
+            {1.0,{"RevivalPlus\characters\tops\data\tracksuit_plane.rvmat"}},
+            {0.7,{"RevivalPlus\characters\tops\data\tracksuit_plane.rvmat"}},
+            {0.5,{"RevivalPlus\characters\tops\data\tracksuit_plane_damage.rvmat"}},
+            {0.3,{"RevivalPlus\characters\tops\data\tracksuit_plane_damage.rvmat"}},
+            {0.0,{"RevivalPlus\characters\tops\data\tracksuit_plane_destruct.rvmat"}}
+          };
+				};
+			};
+    };
+  };
+  class RPL_TrackSuitJacket_PlaneBlack: RPL_TrackSuitJacket_PlaneBase
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\tracksuit_planeblack_g_co.paa",
+      "RevivalPlus\characters\tops\data\tracksuit_planeblack_co.paa",
+      "RevivalPlus\characters\tops\data\tracksuit_planeblack_co.paa"
+    };
+  };
+  class RPL_TrackSuitJacket_PlaneBlack2: RPL_TrackSuitJacket_PlaneBase
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\tracksuit_planeblack_g_co.paa",
+      "RevivalPlus\characters\tops\data\tracksuit_planeblack_v2_co.paa",
+      "RevivalPlus\characters\tops\data\tracksuit_planeblack_v2_co.paa"
+    };
+  };
+  class RPL_TrackSuitJacket_PlaneBlue: RPL_TrackSuitJacket_PlaneBase
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\tracksuit_planeblue_g_co.paa",
+      "RevivalPlus\characters\tops\data\tracksuit_planeblue_co.paa",
+      "RevivalPlus\characters\tops\data\tracksuit_planeblue_co.paa"
+    };
+  };
+  class RPL_TrackSuitJacket_PlaneGreen: RPL_TrackSuitJacket_PlaneBase
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\tracksuit_planegreen_g_co.paa",
+      "RevivalPlus\characters\tops\data\tracksuit_planegreen_co.paa",
+      "RevivalPlus\characters\tops\data\tracksuit_planegreen_co.paa"
+    };
+  };
+  class RPL_TrackSuitJacket_PlaneOlive: RPL_TrackSuitJacket_PlaneBase
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\tracksuit_planeolive_g_co.paa",
+      "RevivalPlus\characters\tops\data\tracksuit_planeolive_co.paa",
+      "RevivalPlus\characters\tops\data\tracksuit_planeolive_co.paa"
+    };
+  };
+  class RPL_TrackSuitJacket_PlaneRed: RPL_TrackSuitJacket_PlaneBase
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\tracksuit_planered_g_co.paa",
+      "RevivalPlus\characters\tops\data\tracksuit_planered_co.paa",
+      "RevivalPlus\characters\tops\data\tracksuit_planered_co.paa"
     };
   };
 

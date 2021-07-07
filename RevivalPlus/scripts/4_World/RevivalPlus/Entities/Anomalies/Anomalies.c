@@ -1,15 +1,23 @@
 class SPL_Anomaly_Wendigo001 extends Inventory_Base
 {
-	protected ref EffectSound m_AnomalyEffect;
+	protected EffectSound m_AnomalyEffect;
+	protected string m_AnomalySound = "RPL_SoundSet_Anomaly_Wendigo001";
 
 	override void EOnInit(IEntity other, int extra)
 	{
 		super.EOnInit(other, extra);
+		EffectSound sound;
+		Object anomaly;
 
 		if ( GetGame().IsClient() || !GetGame().IsMultiplayer() ) {
-			if ( !m_AnomalyEffect )
-					 PlaySoundSet(m_AnomalyEffect, "RPL_SoundSet_Anomaly_Wendigo001", 1.0, 1.0);
-			     Print("[RPLA] :: Spooked someone out!");
+			if ( !m_AnomalyEffect ) {
+				anomaly = Object.Cast(this);
+				sound = SEffectManager.PlaySoundOnObject(m_AnomalySound, anomaly);
+				Print("[RPLA] :: Spooked someone out!");
+			}
+
+			if (sound)
+				sound.SetSoundAutodestroy(true);
 		}
 	}
 
@@ -23,16 +31,24 @@ class SPL_Anomaly_Wendigo001 extends Inventory_Base
 
 class SPL_Anomaly_Wendigo002 extends Inventory_Base
 {
-	protected ref EffectSound m_AnomalyEffect;
+	protected EffectSound m_AnomalyEffect;
+	protected string m_AnomalySound = "RPL_SoundSet_Anomaly_Wendigo002";
 
 	override void EOnInit(IEntity other, int extra)
 	{
 		super.EOnInit(other, extra);
+		EffectSound sound;
+		Object anomaly;
 
 		if ( GetGame().IsClient() || !GetGame().IsMultiplayer() ) {
-			if ( !m_AnomalyEffect )
-					 PlaySoundSet(m_AnomalyEffect, "RPL_SoundSet_Anomaly_Wendigo002", 1.0, 1.0);
-			     Print("[RPLA] :: Spooked someone out!");
+			if ( !m_AnomalyEffect ) {
+				anomaly = Object.Cast(this);
+				sound = SEffectManager.PlaySoundOnObject(m_AnomalySound, anomaly);
+				Print("[RPLA] :: Spooked someone out!");
+			}
+
+			if (sound)
+				sound.SetSoundAutodestroy(true);
 		}
 	}
 
@@ -46,16 +62,24 @@ class SPL_Anomaly_Wendigo002 extends Inventory_Base
 
 class SPL_Anomaly_Arctotherium extends Inventory_Base
 {
-	protected ref EffectSound m_AnomalyEffect;
+	protected EffectSound m_AnomalyEffect;
+	protected string m_AnomalySound = "RPL_SoundSet_Anomaly_Arctotherium";
 
 	override void EOnInit(IEntity other, int extra)
 	{
 		super.EOnInit(other, extra);
+		EffectSound sound;
+		Object anomaly;
 
 		if ( GetGame().IsClient() || !GetGame().IsMultiplayer() ) {
-			if ( !m_AnomalyEffect )
-					 PlaySoundSet(m_AnomalyEffect, "RPL_SoundSet_Anomaly_Arctotherium", 1.0, 1.0);
-			     Print("[RPLA] :: Spooked someone out!");
+			if ( !m_AnomalyEffect ) {
+				anomaly = Object.Cast(this);
+				sound = SEffectManager.PlaySoundOnObject(m_AnomalySound, anomaly);
+				Print("[RPLA] :: Spooked someone out!");
+			}
+
+			if (sound)
+				sound.SetSoundAutodestroy(true);
 		}
 	}
 

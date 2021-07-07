@@ -117,7 +117,7 @@ class RPL_Radio extends ItemBase
   		super.OnSwitchOff();
       Stop_Cassette();
       //TurnOff_Sound();
-      GetCompEM().SwitchOff();
+      //GetCompEM().SwitchOff();
   	}
 
     // Restricts attaching attachments if ruined.

@@ -23,7 +23,7 @@ modded class LoadingScreen {
 		m_ImageLogoCorner.Show(false);
 
 		TStringArray m_ImageBank = {
-			"RevivalPlus/_RPL_Loading/data/dec_2020/primary_co.edds"
+			"RevivalPlus/_RPL_Loading/data/nov_2020/primary_co.edds"
 		};
 
 		m_ImageBackground.LoadImageFile(0, m_ImageBank.GetRandomElement());
@@ -75,7 +75,7 @@ modded class LoginQueueBase {
 		imageWidgetBackground.LoadMaskTexture("");
 
 		TStringArray m_ImageBank = {
-			"RevivalPlus/_RPL_Loading/data/dec_2020/secondary_co.edds"
+			"RevivalPlus/_RPL_Loading/data/nov_2020/secondary_co.edds"
 		};
 
 		imageWidgetBackground.LoadImageFile(0, m_ImageBank.GetRandomElement());
@@ -91,7 +91,7 @@ modded class LoginTimeBase {
 		imageWidgetBackground.LoadMaskTexture("");
 
 		TStringArray m_ImageBank = {
-			"RevivalPlus/_RPL_Loading/data/dec_2020/tertiary_co.edds"
+			"RevivalPlus/_RPL_Loading/data/nov_2020/tertiary_co.edds"
 		};
 
 		imageWidgetBackground.LoadImageFile(0, m_ImageBank.GetRandomElement());

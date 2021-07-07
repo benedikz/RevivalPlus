@@ -10,9 +10,24 @@ class CfgPatches {
 };
 class CfgVehicles {
   class Clothing_Base;
+
+  /* Plate Carrier Vest */
+  class PlateCarrierVest;
+  class RPL_PlateCarrierVest_Multicam: PlateCarrierVest
+  {
+    scope = 2;
+    hiddenSelections[] = {"camoGround","camoMale","camoFemale"};
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\vests\data\ballisticvest_multicam_co.paa",
+      "RevivalPlus\characters\vests\data\ballisticvest_multicam_co.paa",
+      "RevivalPlus\characters\vests\data\ballisticvest_multicam_co.paa"
+    };
+  };
+
+
   class HighCapacityVest_ColorBase;
   class RPL_HighCapacityVest_Raskolnikov: HighCapacityVest_ColorBase {
-    scope = 2;
+    scope = 1;
     visibilityModifier = 0.6;
     varWetMax = 0.25;
     heatIsolation = 0.5;
@@ -30,7 +45,7 @@ class CfgVehicles {
     };
   };
   class RPL_HighCapacityVest_Beranov: HighCapacityVest_ColorBase {
-    scope = 2;
+    scope = 1;
     visibilityModifier = 0.6;
     varWetMax = 0.25;
     heatIsolation = 0.5;
@@ -223,6 +238,88 @@ class CfgVehicles {
           };
         };
       };
+    };
+  };
+
+  /* Soviet Vests */
+  class RPL_BallisticVest_Soviet_Base: PressVest_ColorBase {
+    scope = 0;
+    displayName = "#STR_BallisticVest_Soviet";
+    descriptionShort = "#STR_BallisticVest_Soviet_D";
+    itemsCargoSize[] = {
+      6,
+      5
+    };
+    hiddenSelectionsMaterials[] = {
+      "RevivalPlus\characters\vests\data\pressvest_soviet.rvmat",
+      "RevivalPlus\characters\vests\data\pressvest_soviet.rvmat",
+      "RevivalPlus\characters\vests\data\pressvest_soviet.rvmat"
+    };
+    class DamageSystem {
+      class GlobalHealth {
+        class Health {
+          hitpoints = 750;
+          healthLevels[] = {
+            {
+              1,
+              {
+                "RevivalPlus\characters\vests\data\pressvest_soviet.rvmat"
+              }
+            },
+            {
+              0.7,
+              {
+                "RevivalPlus\characters\vests\data\pressvest_soviet.rvmat"
+              }
+            },
+            {
+              0.5,
+              {
+                "RevivalPlus\characters\vests\data\pressvest_soviet_damage.rvmat"
+              }
+            },
+            {
+              0.3,
+              {
+                "RevivalPlus\characters\vests\data\pressvest_soviet_damage.rvmat"
+              }
+            },
+            {
+              0,
+              {
+                "RevivalPlus\characters\vests\data\pressvest_soviet_destruct.rvmat"
+              }
+            }
+          };
+        };
+      };
+    };
+  };
+  class RPL_BallisticVest_Soviet_Brown: RPL_BallisticVest_Soviet_Base
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\vests\data\pressvest_soviet_brown_co.paa",
+      "RevivalPlus\characters\vests\data\pressvest_soviet_brown_co",
+      "RevivalPlus\characters\vests\data\pressvest_soviet_brown_co"
+    };
+  };
+  class RPL_BallisticVest_Soviet_DarkBrown: RPL_BallisticVest_Soviet_Base
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\vests\data\pressvest_soviet_darkbrown_co.paa",
+      "RevivalPlus\characters\vests\data\pressvest_soviet_darkbrown_co",
+      "RevivalPlus\characters\vests\data\pressvest_soviet_darkbrown_co"
+    };
+  };
+  class RPL_BallisticVest_Soviet_Olive: RPL_BallisticVest_Soviet_Base
+  {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\vests\data\pressvest_soviet_olive_co.paa",
+      "RevivalPlus\characters\vests\data\pressvest_soviet_olive_co",
+      "RevivalPlus\characters\vests\data\pressvest_soviet_olive_co"
     };
   };
 };

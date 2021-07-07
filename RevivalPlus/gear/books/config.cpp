@@ -5,9 +5,10 @@ class CfgPatches
 		units[] = {"RPL_SkillBook_Gunsmith","RPL_SkillBook_Doctor","RPL_SkillBook_Carpenter","RPL_SkillBook_Cook","RPL_SkillBook_Scientist","RPL_SkillBook_Blacksmith","RPL_SkillBook_Distiller","RPL_SkillBook_Unassigned"};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data"};
+		requiredAddons[] = {"DZ_Data", "DZ_Gear_Books","DZ_Gear_Containers"};
 	};
 };
+
 class CfgVehicles
 {
 	class Book_Base;
@@ -78,5 +79,81 @@ class CfgVehicles
 		displayName = "Neznámá oborová kniha";
 		descriptionShort = "...";
 		hiddenSelectionsTextures[] = {"RevivalPlus\gear\books\data\skillbook_empty_co.paa"};
+	};
+
+	class Container_Base;
+	class RPL_Notebook_Base: Container_Base
+	{
+		scope = 0;
+		displayName = "";
+		descriptionShort = "";
+		model = "DZ\gear\books\Book_kniga.p3d";
+		hiddenSelections[] = {"camoGround"};
+		hiddenSelectionsTextures[] = {"DZ\gear\books\data\book_kniga_co.paa"};
+		itemSize[] = {2,2};
+		itemsCargoSize[] = {10,4};
+		weight = 150;
+		attachments[] = {"Pen_slot"};
+		inventorySlot[] = {"Book_slot"};
+		rotationFlags = 1;
+		canBeDigged = 1;
+		allowOwnedCargoManipulation = 1;
+		isMeleeWeapon = 1;
+		class GUIInventoryAttachmentsProps
+		{
+			class Pen_slot
+			{
+				name = "Pen_slot";
+				attachmentSlots[] = {"Pen_slot"};
+			};
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 50;
+					healthLevels[] = {
+						{1.01,{"DZ\gear\books\Data\book.rvmat"}},
+						{0.7,{"DZ\gear\books\Data\book.rvmat"}},
+						{0.5,{"DZ\gear\books\Data\book_damage.rvmat"}},
+						{0.3,{"DZ\gear\books\Data\book_damage.rvmat"}},
+						{0.1,{"DZ\gear\books\Data\book_destruct.rvmat"}}
+					};
+				};
+			};
+		};
+	};
+	class RPL_Notebook_01: RPL_Notebook_Base
+	{
+		scope = 2;
+		displayName = "#RPL_Notebook";
+		descriptionShort = "#RPL_Notebook_D";
+		hiddenSelectionsTextures[] = {"RevivalPlus\gear\books\data\notebook_blue_co.paa"};
+	};
+	class RPL_Notebook_02: RPL_Notebook_Base
+	{
+		scope = 2;
+		displayName = "#RPL_Notebook";
+		descriptionShort = "#RPL_Notebook_D";
+		hiddenSelectionsTextures[] = {"RevivalPlus\gear\books\data\notebook_pink_co.paa"};
+	};
+	class RPL_Notebook_03: RPL_Notebook_Base
+	{
+		scope = 2;
+		displayName = "#RPL_Notebook";
+		descriptionShort = "#RPL_Notebook_D";
+		hiddenSelectionsTextures[] = {"RevivalPlus\gear\books\data\notebook_help_co.paa"};
+	};
+};
+
+class CfgSlots
+{
+	class Slot_Pen_slot
+	{
+		name = "Pen_slot";
+		displayName = "Pen_slot";
+		ghostIcon = "";
 	};
 };

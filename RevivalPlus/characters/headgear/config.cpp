@@ -10,6 +10,7 @@ class CfgPatches {
 };
 class CfgVehicles {
   class Clothing_Base;
+
   class PrisonerCap;
   class RPL_PrisonerCap_Olive: PrisonerCap {
     scope = 2;
@@ -19,6 +20,15 @@ class CfgVehicles {
       "RevivalPlus\characters\headgear\data\prison_cap_green_co.paa"
     };
   };
+  class RPL_PrisonerCap_Bohous: PrisonerCap {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\headgear\data\capec_co.paa",
+      "RevivalPlus\characters\headgear\data\capec_co.paa",
+      "RevivalPlus\characters\headgear\data\capec_co.paa"
+    };
+  };
+
   class CowboyHat_ColorBase;
   class RPL_CowboyHat_BlackWhite: CowboyHat_ColorBase {
     scope = 2;
@@ -149,6 +159,25 @@ class CfgVehicles {
       "RevivalPlus\characters\headgear\data\helmetmich_black_punisher_co.paa"
     };
   };
+  class BallisticHelmet_UN: BallisticHelmet_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\headgear\data\helmetmich_un_co.paa",
+      "RevivalPlus\characters\headgear\data\helmetmich_un_co.paa",
+      "RevivalPlus\characters\headgear\data\helmetmich_un_co.paa"
+    };
+	};
+  class RPL_BallisticHelmet_UN_Black: BallisticHelmet_ColorBase
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\headgear\data\helmetmich_black_un_co.paa",
+      "RevivalPlus\characters\headgear\data\helmetmich_black_un_co.paa",
+      "RevivalPlus\characters\headgear\data\helmetmich_black_un_co.paa"
+    };
+	};
+
   class BaseballCap_ColorBase;
   class RPL_BaseballCap_WalkingDead: BaseballCap_ColorBase {
     scope = 2;

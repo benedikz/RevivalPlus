@@ -5,9 +5,11 @@ modded class MissionGameplay
     Print("[MissionGameplay] :: RevivalPlus Initialized");
     //Trace.Log(0, "[MissionGameplay] :: RevivalPlus Initialized");
 
+    /*
     if ( GetGame().IsServer() )
     {
       PlantExploitFix.getInstance();
     }
+    */
   }
 };
