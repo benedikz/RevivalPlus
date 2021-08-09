@@ -468,6 +468,7 @@ class CfgVehicles {
       "RevivalPlus\characters\tops\data\tshirt_russiangreb_co.paa"
     };
   };
+  /* DEPRECATED
   class RPL_EasterEgg_Lada: RPL_TShirt_ColorBase {
     scope = 2;
     displayName = "#STR_EasterEgg_Lada";
@@ -478,10 +479,9 @@ class CfgVehicles {
       "RevivalPlus\characters\tops\data\tshirt_easteregg1_co.paa"
     };
   };
+  */
   class RPL_TShirt_BlackOrangeStripes: RPL_TShirt_ColorBase {
     scope = 2;
-    displayName = "Pruhované tričko";
-    descriptionShort = "Černo-oranžové pruhované tričko.";
     hiddenSelectionsTextures[] = {
       "RevivalPlus\characters\tops\data\tshirt_stripes_blackorange_co.paa",
       "RevivalPlus\characters\tops\data\tshirt_stripes_blackorange_co.paa",
@@ -490,8 +490,6 @@ class CfgVehicles {
   };
   class RPL_TShirt_BlackLBrownStripes: RPL_TShirt_ColorBase {
     scope = 2;
-    displayName = "Pruhované tričko";
-    descriptionShort = "Černo-hnědé pruhované tričko.";
     hiddenSelectionsTextures[] = {
       "RevivalPlus\characters\tops\data\tshirt_stripes_blacklightbrown_co.paa",
       "RevivalPlus\characters\tops\data\tshirt_stripes_blacklightbrown_co.paa",
@@ -500,12 +498,26 @@ class CfgVehicles {
   };
   class RPL_TShirt_GreyWhiteStripes: RPL_TShirt_ColorBase {
     scope = 2;
-    displayName = "Pruhované tričko";
-    descriptionShort = "Šedo-bílé pruhované tričko.";
     hiddenSelectionsTextures[] = {
       "RevivalPlus\characters\tops\data\tshirt_stripes_greywhite_co.paa",
       "RevivalPlus\characters\tops\data\tshirt_stripes_greywhite_co.paa",
       "RevivalPlus\characters\tops\data\tshirt_stripes_greywhite_co.paa"
+    };
+  };
+  class RPL_TShirt_LightBlueStripes: RPL_TShirt_ColorBase {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\tshirt_lightbluestripes_g_co.paa",
+      "RevivalPlus\characters\tops\data\tshirt_lightbluestripes_co.paa",
+      "RevivalPlus\characters\tops\data\tshirt_lightbluestripes_co.paa"
+    };
+  };
+  class RPL_TShirt_LightGreenStripes: RPL_TShirt_ColorBase {
+    scope = 2;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\tshirt_lightgreenstripes_g_co.paa",
+      "RevivalPlus\characters\tops\data\tshirt_lightgreenstripes_co.paa",
+      "RevivalPlus\characters\tops\data\tshirt_lightgreenstripes_co.paa"
     };
   };
   class RPL_TShirt_Police: RPL_TShirt_ColorBase {
@@ -970,6 +982,15 @@ class CfgVehicles {
       "RevivalPlus\characters\tops\data\m65_jacket_white_co.paa",
       "RevivalPlus\characters\tops\data\m65_jacket_white_co.paa",
       "RevivalPlus\characters\tops\data\m65_jacket_white_co.paa"
+    };
+  };
+  class RPL_M65Jacket_SpetsnazMarpat: M65Jacket_ColorBase {
+    scope = 2;
+    visibilityModifier = 0.7;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\tops\data\spetsnaz_m65_marpat_co.paa",
+      "RevivalPlus\characters\tops\data\spetsnaz_m65_marpat_co.paa",
+      "RevivalPlus\characters\tops\data\spetsnaz_m65_marpat_co.paa"
     };
   };
 

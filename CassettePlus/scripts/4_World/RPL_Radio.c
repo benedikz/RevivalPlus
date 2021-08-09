@@ -40,6 +40,7 @@ class RPL_Radio extends ItemBase
     const string SOUND_TURN_ON = "RPL_SoundSet_TurnOn";
   	//const string SOUND_TURN_OFF = "RPL_SoundSet_TurnOff";
     // Musical Tracks (Fair Use)
+    const string TRACK_AYYAYYAY = "RPL_SoundSet_AyYayYay";
     const string TRACK_ATRAKSION = "RPL_SoundSet_Atraksion";
     const string TRACK_BIRCHES = "RPL_SoundSet_Birches";
     const string TRACK_BREPETRUNKO = "RPL_SoundSet_BrePetrunko";
@@ -90,6 +91,11 @@ class RPL_Radio extends ItemBase
     const string TRACK_TCHAIKOVSKY_WESINGTODAY = "RPL_SoundSet_Tchaikovsky_WeSingToday";
     const string TRACK_UTRO = "RPL_SoundSet_Utro";
     const string TRACK_VPUTI = "RPL_SoundSet_VPuti";
+    const string TRACK_VANILLYCAR = "RPL_SoundSet_VanillyCar";
+    const string TRACK_WHEREISMYMIND = "RPL_SoundSet_WhereIsMyMind";
+    const string TRACK_GOGOYELLOW = "RPL_SoundSet_GoGoYellow";
+    const string TRACK_VIZISI = "RPL_SoundSet_Vizisi";
+    const string TRACK_DEVUSHKAMECHTY = "RPL_SoundSet_DevushkaMechty";
 
     ref protected EffectSound RPLA_Track;
     ref protected EffectSound RPLA_TrackLoop;
@@ -154,6 +160,12 @@ class RPL_Radio extends ItemBase
 
           switch (CassetteType)
 					{
+            case "RPL_Cassette_AyYayYay":
+  					{
+              Print("[DEBUG] ::: Playing 'TRACK_AYYAYYAY' (1)");
+  						PlaySoundSet(RPLA_Track, TRACK_AYYAYYAY, 0.5, 0.6);
+  					}
+  					break;
             case "RPL_Cassette_Atraksion":
   					{
               Print("[DEBUG] ::: Playing 'TRACK_ATRAKSION' (1)");
@@ -443,10 +455,40 @@ class RPL_Radio extends ItemBase
   						PlaySoundSet(RPLA_Track, TRACK_UTRO, 0.5, 0.6);
   					}
   					break;
+            case "RPL_Cassette_VanillyCar":
+  					{
+              Print("[DEBUG] ::: Playing 'TRACK_VANILLYCAR' (1)");
+  						PlaySoundSet(RPLA_Track, TRACK_VANILLYCAR, 0.5, 0.6);
+  					}
+  					break;
             case "RPL_Cassette_VPuti":
   					{
               Print("[DEBUG] ::: Playing 'TRACK_VPUTI' (1)");
   						PlaySoundSet(RPLA_Track, TRACK_VPUTI, 0.5, 0.6);
+  					}
+  					break;
+            case "RPL_Cassette_WhereIsMyMind":
+  					{
+              Print("[DEBUG] ::: Playing 'TRACK_WHEREISMYMIND' (1)");
+  						PlaySoundSet(RPLA_Track, TRACK_WHEREISMYMIND, 0.5, 0.6);
+  					}
+  					break;
+            case "RPL_Cassette_GoGoYellow":
+            {
+              Print("[DEBUG] ::: Playing 'TRACK_GOGOYELLOW' (1)");
+              PlaySoundSet(RPLA_Track, TRACK_GOGOYELLOW, 0.5, 0.6);
+            }
+            break;
+            case "RPL_Cassette_Vizisi":
+  					{
+              Print("[DEBUG] ::: Playing 'TRACK_VIZISI' (1)");
+  						PlaySoundSet(RPLA_Track, TRACK_VIZISI, 0.5, 0.6);
+  					}
+  					break;
+            case "RPL_Cassette_DevushkaMechty":
+  					{
+              Print("[DEBUG] ::: Playing 'TRACK_DEVUSHKAMECHTY' (1)");
+  						PlaySoundSet(RPLA_Track, TRACK_DEVUSHKAMECHTY, 0.5, 0.6);
   					}
   					break;
 

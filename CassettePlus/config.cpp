@@ -7,6 +7,7 @@ class CfgPatches
 			"RPL_CassetteCase",
 			"RPL_Cassette_Untitled",
 			"RPL_Cassette_Atraksion",
+			"RPL_Cassette_AyYayYay",
 			"RPL_Cassette_BrePetrunko",
 			"RPL_Cassette_Birches",
 			"RPL_Cassette_CantHelpFallingInLove",
@@ -54,7 +55,12 @@ class CfgPatches
 			"RPL_Cassette_Tchaikovsky_TheChristmasTree",
 			"RPL_Cassette_Tchaikovsky_WeSingToday",
 			"RPL_Cassette_Utro",
+			"RPL_Cassette_VanillyCar",
 			"RPL_Cassette_VPuti",
+			"RPL_Cassette_WhereIsMyMind",
+			"RPL_Cassette_GoGoYellow",
+			"RPL_Cassette_Vizisi",
+			"RPL_Cassette_DevushkaMechty",
 			"RPL_Radio"
 		};
 		weapons[] = {};
@@ -119,6 +125,10 @@ class CfgSoundShaders
 	class RPL_TurnOn_Shader: RPL_Cassette_SoundShader_Base
 	{
 		samples[] = {{"CassettePlus\tracks\cassetteplayer_turn_on",1}};
+	};
+	class RPL_AyYayYay_Shader: RPL_Cassette_SoundShader_Base
+	{
+		samples[] = {{"CassettePlus\tracks\track_ayyayyay_mo",1}};
 	};
 	class RPL_Atraksion_Shader: RPL_Cassette_SoundShader_Base
 	{
@@ -312,9 +322,29 @@ class CfgSoundShaders
 	{
 		samples[] = {{"CassettePlus\tracks\track_utro_mo",1}};
 	};
+	class RPL_VanillyCar_Shader: RPL_Cassette_SoundShader_Base
+	{
+		samples[] = {{"CassettePlus\tracks\track_vanillycar_mo",1}};
+	};
 	class RPL_VPuti_Shader: RPL_Cassette_SoundShader_Base
 	{
 		samples[] = {{"CassettePlus\tracks\track_vputi_mo",1}};
+	};
+	class RPL_WhereIsMyMind_Shader: RPL_Cassette_SoundShader_Base
+	{
+		samples[] = {{"CassettePlus\tracks\track_whereismymind_mo",1}};
+	};
+	class RPL_GoGoYellow_Shader: RPL_Cassette_SoundShader_Base
+	{
+		samples[] = {{"CassettePlus\tracks\track_gogoyellow_mo",1}};
+	};
+	class RPL_Vizisi_Shader: RPL_Cassette_SoundShader_Base
+	{
+		samples[] = {{"CassettePlus\tracks\track_vizisi_mo",1}};
+	};
+	class RPL_DevushkaMechty_Shader: RPL_Cassette_SoundShader_Base
+	{
+		samples[] = {{"CassettePlus\tracks\track_devushkamechty_mo",1}};
 	};
 };
 class CfgSoundSets
@@ -322,6 +352,10 @@ class CfgSoundSets
 	class RPL_SoundSet_TurnOn
 	{
 		soundShaders[] = {"RPL_TurnOn_Shader"};
+	};
+	class RPL_SoundSet_AyYayYay
+	{
+		soundShaders[] = {"RPL_AyYayYay_Shader"};
 	};
 	class RPL_SoundSet_Atraksion
 	{
@@ -515,9 +549,29 @@ class CfgSoundSets
 	{
 		soundShaders[] = {"RPL_Utro_Shader"};
 	};
+	class RPL_SoundSet_VanillyCar
+	{
+		soundShaders[] = {"RPL_VanillyCar_Shader"};
+	};
 	class RPL_SoundSet_VPuti
 	{
 		soundShaders[] = {"RPL_VPuti_Shader"};
+	};
+	class RPL_SoundSet_WhereIsMyMind
+	{
+		soundShaders[] = {"RPL_WhereIsMyMind_Shader"};
+	};
+	class RPL_SoundSet_GoGoYellow
+	{
+		soundShaders[] = {"RPL_GoGoYellow_Shader"};
+	};
+	class RPL_SoundSet_Vizisi
+	{
+		soundShaders[] = {"RPL_Vizisi_Shader"};
+	};
+	class RPL_SoundSet_DevushkaMechty
+	{
+		soundShaders[] = {"RPL_DevushkaMechty_Shader"};
 	};
 };
 class CfgVehicles
@@ -692,6 +746,15 @@ class CfgVehicles
 		class CfgCassette
 		{
 			soundSet = "";
+		};
+	};
+	class RPL_Cassette_AyYayYay: RPL_Cassette_Base
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"CassettePlus\data\kazeta_ayyayyay_co.paa"};
+		class CfgCassette
+		{
+			soundSet = "RPL_SoundSet_AyYayYay";
 		};
 	};
 	class RPL_Cassette_Atraksion: RPL_Cassette_Base
@@ -1126,6 +1189,15 @@ class CfgVehicles
 			soundSet = "RPL_SoundSet_Utro";
 		};
 	};
+	class RPL_Cassette_VanillyCar: RPL_Cassette_Base
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"CassettePlus\data\kazeta_vanillycar_co.paa"};
+		class CfgCassette
+		{
+			soundSet = "RPL_SoundSet_VanillyCar";
+		};
+	};
 	class RPL_Cassette_VPuti: RPL_Cassette_Base
 	{
 		scope = 2;
@@ -1133,6 +1205,42 @@ class CfgVehicles
 		class CfgCassette
 		{
 			soundSet = "RPL_SoundSet_VPuti";
+		};
+	};
+	class RPL_Cassette_WhereIsMyMind: RPL_Cassette_Base
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"CassettePlus\data\kazeta_whereismymind_co.paa"};
+		class CfgCassette
+		{
+			soundSet = "RPL_SoundSet_WhereIsMyMind";
+		};
+	};
+	class RPL_Cassette_GoGoYellow: RPL_Cassette_Base
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"CassettePlus\data\kazeta_gogoyellow_co.paa"};
+		class CfgCassette
+		{
+			soundSet = "RPL_SoundSet_GoGoYellow";
+		};
+	};
+	class RPL_Cassette_Vizisi: RPL_Cassette_Base
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"CassettePlus\data\kazeta_vizisi_co.paa"};
+		class CfgCassette
+		{
+			soundSet = "RPL_SoundSet_Vizisi";
+		};
+	};
+	class RPL_Cassette_DevushkaMechty: RPL_Cassette_Base
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"CassettePlus\data\kazeta_devushkamechty_co.paa"};
+		class CfgCassette
+		{
+			soundSet = "RPL_SoundSet_DevushkaMechty";
 		};
 	};
 };

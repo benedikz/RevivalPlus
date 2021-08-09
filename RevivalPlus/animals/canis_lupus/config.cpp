@@ -63,5 +63,4 @@ class CfgVehicles
 			"RevivalPlus\animals\canis_lupus\data\fur_toxicus_ca.paa"
 		};
 	};
-
 };

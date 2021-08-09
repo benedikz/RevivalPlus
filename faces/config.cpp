@@ -63,6 +63,29 @@ class cfgVehicles
 			mat[] = {"faces\data\m_vlk\hhl_m_vlk_body_shaved.rvmat","faces\data\m_vlk\hhl_m_vlk_body_shaved_injury.rvmat","faces\data\m_vlk\hhl_m_vlk_body_shaved_injury2.rvmat","faces\data\m_vlk\hhl_m_vlk_body_unshaved.rvmat","faces\data\m_vlk\hhl_m_vlk_body_unshaved_injury.rvmat","faces\data\m_vlk\hhl_m_vlk_body_unshaved_injury2.rvmat","faces\data\m_vlk\hhl_m_vlk_body_bearded.rvmat","faces\data\m_vlk\hhl_m_vlk_body_bearded_injury.rvmat","faces\data\m_vlk\hhl_m_vlk_body_bearded_injury2.rvmat"};
 		};
 	};
+
+	class MaleCyrilHead;
+	class MaleViktorHead: MaleCyrilHead
+	{
+		model = "\dz\characters\heads\m_Cyril.p3d";
+		hiddenSelectionsTextures[] = {"","faces\data\m_viktor\hhl_m_viktor_hair_ca.paa"};
+		hiddenSelectionsMaterials[] = {"","faces\data\m_viktor\hhl_m_viktor_hair.rvmat"};
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {
+				"faces\data\m_viktor\hhl_m_viktor_body_shaved.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_shaved_injury.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_shaved_injury2.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_unshaved.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_unshaved_injury.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_unshaved_injury2.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_bearded.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_bearded_injury.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_bearded_injury2.rvmat"
+			};
+		};
+	};
 };
 class CfgHeads
 {
@@ -103,6 +126,26 @@ class CfgHeads
 		{
 			tex[] = {};
 			mat[] = {"faces\data\m_vlk\hhl_m_vlk_body_shaved.rvmat","faces\data\m_vlk\hhl_m_vlk_body_shaved_injury.rvmat","faces\data\m_vlk\hhl_m_vlk_body_shaved_injury2.rvmat","faces\data\m_vlk\hhl_m_vlk_body_unshaved.rvmat","faces\data\m_vlk\hhl_m_vlk_body_unshaved_injury.rvmat","faces\data\m_vlk\hhl_m_vlk_body_unshaved_injury2.rvmat","faces\data\m_vlk\hhl_m_vlk_body_bearded.rvmat","faces\data\m_vlk\hhl_m_vlk_body_bearded_injury.rvmat","faces\data\m_vlk\hhl_m_vlk_body_bearded_injury2.rvmat"};
+		};
+	};
+	class MaleCyrilHead;
+	class MaleViktorHead: MaleCyrilHead
+	{
+		model = "\dz\characters\heads\m_Cyril.p3d";
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {
+				"faces\data\m_viktor\hhl_m_viktor_body_shaved.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_shaved_injury.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_shaved_injury2.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_unshaved.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_unshaved_injury.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_unshaved_injury2.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_bearded.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_bearded_injury.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_bearded_injury2.rvmat"
+			};
 		};
 	};
 };

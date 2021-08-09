@@ -125,4 +125,52 @@ class CfgVehicles
 		};
 		voiceType = 1;
 	};
+	class SurvivorM_Cyril;
+	class SurvivorM_Viktor: SurvivorM_Cyril
+	{
+		scope = 2;
+		emptyHead = "MaleViktorHead";
+		emptyBody = "MaleCyrilTorso";
+		emptyLegs = "MaleCyrilLegs";
+		emptyFeet = "MaleCyrilFeet";
+		emptyGloves = "MaleCyrilHands";
+		faceType = "MaleViktorHead";
+		class BloodyHands
+		{
+			mat_normal = "faces\data\m_viktor\hhl_m_viktor_body_shaved.rvmat";
+			mat_blood = "faces\data\m_viktor\hhl_m_viktor_body_bloodyhands.rvmat";
+		};
+		class Lifespan
+		{
+			class Beard
+			{
+				mat[] = {
+					"faces\data\m_viktor\hhl_m_viktor_body_shaved_co.paa",
+					"faces\data\m_viktor\hhl_m_viktor_body_shaved.rvmat",
+					"faces\data\m_viktor\hhl_m_viktor_body_unshaved_co.paa",
+					"faces\data\m_viktor\hhl_m_viktor_body_unshaved.rvmat",
+					"faces\data\m_viktor\hhl_m_viktor_body_bearded_co.paa",
+					"faces\data\m_viktor\hhl_m_viktor_body_bearded.rvmat",
+					"faces\data\m_viktor\hhl_m_viktor_beard_ca.paa",
+					"faces\data\m_viktor\hhl_m_viktor_beard.rvmat"
+				};
+			};
+		};
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {
+				"faces\data\m_viktor\hhl_m_viktor_body_shaved.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_shaved_injury.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_shaved_injury2.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_unshaved.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_unshaved_injury.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_unshaved_injury2.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_bearded.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_bearded_injury.rvmat",
+				"faces\data\m_viktor\hhl_m_viktor_body_bearded_injury2.rvmat"
+			};
+		};
+		voiceType = 1;
+	};
 };

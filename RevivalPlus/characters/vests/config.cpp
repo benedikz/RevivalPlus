@@ -62,6 +62,24 @@ class CfgVehicles {
       };
     };
   };
+  class RPL_HighCapacityVest_Jegorov: HighCapacityVest_ColorBase {
+    scope = 1;
+    visibilityModifier = 0.6;
+    varWetMax = 0.25;
+    heatIsolation = 0.5;
+    hiddenSelectionsTextures[] = {
+      "RevivalPlus\characters\vests\data\tacticalvest2_jegorov_co.paa",
+      "RevivalPlus\characters\vests\data\tacticalvest2_jegorov_co.paa",
+      "RevivalPlus\characters\vests\data\tacticalvest2_jegorov_co.paa"
+    };
+    class DamageSystem {
+      class GlobalHealth {
+        class Health {
+          hitpoints = 1250;
+        };
+      };
+    };
+  };
   class ReflexVest;
   class RPL_ReflexVest_Police: ReflexVest {
     scope = 2;
