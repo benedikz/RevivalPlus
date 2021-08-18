@@ -1,4 +1,3 @@
-// extends ManBase
 modded class PlayerBase
 {
     static bool ZAddedCustomIK;
@@ -25,7 +24,7 @@ modded class PlayerBase
             GetDayZPlayerType().AddItemInHandsProfileIK("RPL_SmallSnowball", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/orange.anm");
 
             // Documents
-            //GetDayZPlayerType().AddItemInHandsProfileIK("RPL_SmallDocument_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/Seeds_Tomato.anm");
+            GetDayZPlayerType().AddItemInHandsProfileIK("RPL_SmallDocument_ColorBase", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/Seeds_Tomato.anm");
 
             // Books / Notebooks
             GetDayZPlayerType().AddItemInHandsProfileIK("RPL_Skillbook_Base", "dz/anims/workspaces/player/player_main/player_main_1h.asi", toolsOneHanded, "dz/anims/anm/player/ik/gear/book.anm");

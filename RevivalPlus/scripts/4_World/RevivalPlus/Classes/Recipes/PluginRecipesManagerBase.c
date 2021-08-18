@@ -133,6 +133,30 @@ modded class PluginRecipesManagerBase extends PluginBase
     RegisterRecipe( new PaintGlock19_DarkTan );
     RegisterRecipe( new PaintGlock19_White );
     // <Magazines>
+    RegisterRecipe( new PaintMag_AK74_30Rnd_Black );
+    RegisterRecipe( new PaintMag_AK74_30Rnd_Olive );
+    RegisterRecipe( new PaintMag_AK74_30Rnd_DarkTan );
+    RegisterRecipe( new PaintMag_AK74_30Rnd_White );
+    RegisterRecipe( new PaintMag_AK74_45Rnd_Black );
+    RegisterRecipe( new PaintMag_AK74_45Rnd_Olive );
+    RegisterRecipe( new PaintMag_AK74_45Rnd_DarkTan );
+    RegisterRecipe( new PaintMag_AK74_45Rnd_White );
+    RegisterRecipe( new PaintMag_AKM_30Rnd_Black );
+    RegisterRecipe( new PaintMag_AKM_30Rnd_Olive );
+    RegisterRecipe( new PaintMag_AKM_30Rnd_DarkTan );
+    RegisterRecipe( new PaintMag_AKM_30Rnd_White );
+    RegisterRecipe( new PaintMag_AKM_Drum75Rnd_Black );
+    RegisterRecipe( new PaintMag_AKM_Drum75Rnd_Olive );
+    RegisterRecipe( new PaintMag_AKM_Drum75Rnd_DarkTan );
+    RegisterRecipe( new PaintMag_AKM_Drum75Rnd_White );
+    RegisterRecipe( new PaintMag_FAL_20Rnd_Black );
+    RegisterRecipe( new PaintMag_FAL_20Rnd_Olive );
+    RegisterRecipe( new PaintMag_FAL_20Rnd_DarkTan );
+    RegisterRecipe( new PaintMag_FAL_20Rnd_White );
+    RegisterRecipe( new PaintMag_STANAG_30Rnd_Black );
+    RegisterRecipe( new PaintMag_STANAG_30Rnd_Olive );
+    RegisterRecipe( new PaintMag_STANAG_30Rnd_DarkTan );
+    RegisterRecipe( new PaintMag_STANAG_30Rnd_White );
     // <Attachments>
     RegisterRecipe( new PaintAK_WoodBttstck_Black );
     RegisterRecipe( new PaintAK_WoodBttstck_Olive );
@@ -176,6 +200,12 @@ modded class PluginRecipesManagerBase extends PluginBase
     // <Pistols>
     RegisterRecipe( new DeColor_Glock19_PB );
     // <Magazines>
+    RegisterRecipe( new DeColor_Mag_AK74_30Rnd_PB );
+    RegisterRecipe( new DeColor_Mag_AK74_45Rnd_PB );
+    RegisterRecipe( new DeColor_Mag_AKM_30Rnd_PB );
+    RegisterRecipe( new DeColor_Mag_AKM_Drum75Rnd_PB );
+    RegisterRecipe( new DeColor_Mag_FAL_20Rnd_PB );
+    RegisterRecipe( new DeColor_Mag_STANAG_30Rnd_PB );
     // <Attachments>
     RegisterRecipe( new DeColor_AK74WoodBttstck_PB );
     RegisterRecipe( new DeColor_AK74WoodHndgrd_PB );

@@ -11,36 +11,137 @@ class CfgPatches
     };
 	};
 };
-
+/* Mode Classes */
+class Mode_Safe;
+class Mode_SemiAuto;
+class Mode_Burst;
+class Mode_FullAuto;
+class OpticsInfoRifle;
 class CfgWeapons
 {
-	/*
-  class AKM;
-  class RPL_AKM_Black : AKM
-  {
-    scope = 2;
-		color = "Black";
-    hiddenSelectionsTextures[] = {"RevivalPlus\weapons\AKM\data\akm_black_co.paa"};
-  };
-  class RPL_AKM_Olive : AKM
-  {
-    scope = 2;
-		color = "Olive";
-    hiddenSelectionsTextures[] = {"RevivalPlus\weapons\AKM\data\akm_olive_co.paa"};
-  };
-  class RPL_AKM_DarkTan : AKM
-  {
-    scope = 2;
-		color = "DarkTan";
-    hiddenSelectionsTextures[] = {"RevivalPlus\weapons\AKM\data\akm_darktan_co.paa"};
-  };
-  class RPL_AKM_White : AKM
-  {
-    scope = 2;
-		color = "White";
-    hiddenSelectionsTextures[] = {"RevivalPlus\weapons\AKM\data\akm_white_co.paa"};
-  };
-	*/
+	/* BASE OVERRIDES (MIGHT BE UNCOMPATIBLE WITH OTHER MODS) */
+	class Rifle_Base;
+	class AK74_Base: Rifle_Base
+	{
+		magazines[] = {
+			"Mag_AK74_30Rnd",
+			"Mag_AK74_30Rnd_Black",
+			"Mag_AK74_30Rnd_Green",
+			"Mag_AK74_45Rnd",
+			"RPL_Mag_AK74_30Rnd_Black",			// Colored variants from @RevivalPlus
+			"RPL_Mag_AK74_30Rnd_Olive",
+			"RPL_Mag_AK74_30Rnd_DarkTan",
+			"RPL_Mag_AK74_30Rnd_White",
+			"RPL_Mag_AK74_45Rnd_Black",
+			"RPL_Mag_AK74_45Rnd_Olive",
+			"RPL_Mag_AK74_45Rnd_DarkTan",
+			"RPL_Mag_AK74_45Rnd_White"
+		};
+	};
+	class AKM_Base: Rifle_Base
+	{
+		magazines[] = {
+			"Mag_AKM_30Rnd",
+			"Mag_AKM_Palm30Rnd",
+			"Mag_AKM_Palm30Rnd_Black",
+			"Mag_AKM_Palm30Rnd_Green",
+			"Mag_AKM_Drum75Rnd",
+			"Mag_AKM_Drum75Rnd_Green",
+			"Mag_AKM_Drum75Rnd_Black",
+			"Mag_AKM_Drum_TEST",
+			"RPL_Mag_AKM_30Rnd_Black",			// Colored variants from @RevivalPlus
+			"RPL_Mag_AKM_30Rnd_Olive",
+			"RPL_Mag_AKM_30Rnd_DarkTan",
+			"RPL_Mag_AKM_30Rnd_White",
+			"RPL_Mag_AKM_Drum75Rnd_Black",
+			"RPL_Mag_AKM_Drum75Rnd_Olive",
+			"RPL_Mag_AKM_Drum75Rnd_DarkTan",
+			"RPL_Mag_AKM_Drum75Rnd_White"
+		};
+	};
+	class FAL_Base: Rifle_Base
+	{
+		magazines[] = {
+			"Mag_FAL_20Rnd",
+			"RPL_Mag_FAL_20Rnd_Black",			// Colored variants from @RevivalPlus
+			"RPL_Mag_FAL_20Rnd_Olive",
+			"RPL_Mag_FAL_20Rnd_DarkTan",
+			"RPL_Mag_FAL_20Rnd_White"
+		};
+	};
+	class AugSteyr_Base: Rifle_Base
+	{
+		magazines[] = {
+			"Mag_STANAG_30Rnd",
+			"Mag_STANAGCoupled_30Rnd",
+			"Mag_CMAG_10Rnd",
+			"Mag_CMAG_20Rnd",
+			"Mag_CMAG_30Rnd",
+			"Mag_CMAG_40Rnd",
+			"Mag_CMAG_10Rnd_Green",
+			"Mag_CMAG_20Rnd_Green",
+			"Mag_CMAG_30Rnd_Green",
+			"Mag_CMAG_40Rnd_Green",
+			"Mag_CMAG_10Rnd_Black",
+			"Mag_CMAG_20Rnd_Black",
+			"Mag_CMAG_30Rnd_Black",
+			"Mag_CMAG_40Rnd_Black",
+			"RPL_Mag_STANAG_30Rnd_Black",			// Colored variants from @RevivalPlus
+			"RPL_Mag_STANAG_30Rnd_Olive",
+			"RPL_Mag_STANAG_30Rnd_DarkTan",
+			"RPL_Mag_STANAG_30Rnd_White"
+		};
+	};
+	class M4A1_Base: Rifle_Base
+	{
+		magazines[] = {
+			"Mag_STANAG_30Rnd",
+			"Mag_STANAGCoupled_30Rnd",
+			"Mag_STANAG_60Rnd",
+			"Mag_CMAG_10Rnd",
+			"Mag_CMAG_20Rnd",
+			"Mag_CMAG_30Rnd",
+			"Mag_CMAG_40Rnd",
+			"Mag_CMAG_10Rnd_Green",
+			"Mag_CMAG_20Rnd_Green",
+			"Mag_CMAG_30Rnd_Green",
+			"Mag_CMAG_40Rnd_Green",
+			"Mag_CMAG_10Rnd_Black",
+			"Mag_CMAG_20Rnd_Black",
+			"Mag_CMAG_30Rnd_Black",
+			"Mag_CMAG_40Rnd_Black",
+			"RPL_Mag_STANAG_30Rnd_Black",			// Colored variants from @RevivalPlus
+			"RPL_Mag_STANAG_30Rnd_Olive",
+			"RPL_Mag_STANAG_30Rnd_DarkTan",
+			"RPL_Mag_STANAG_30Rnd_White"
+		};
+	};
+	class M16A2_Base: Rifle_Base
+	{
+		magazines[] = {
+			"Mag_STANAG_30Rnd",
+			"Mag_STANAGCoupled_30Rnd",
+			"Mag_STANAG_60Rnd",
+			"Mag_CMAG_10Rnd",
+			"Mag_CMAG_20Rnd",
+			"Mag_CMAG_30Rnd",
+			"Mag_CMAG_40Rnd",
+			"Mag_CMAG_10Rnd_Green",
+			"Mag_CMAG_20Rnd_Green",
+			"Mag_CMAG_30Rnd_Green",
+			"Mag_CMAG_40Rnd_Green",
+			"Mag_CMAG_10Rnd_Black",
+			"Mag_CMAG_20Rnd_Black",
+			"Mag_CMAG_30Rnd_Black",
+			"Mag_CMAG_40Rnd_Black",
+			"RPL_Mag_STANAG_30Rnd_Black",			// Colored variants from @RevivalPlus
+			"RPL_Mag_STANAG_30Rnd_Olive",
+			"RPL_Mag_STANAG_30Rnd_DarkTan",
+			"RPL_Mag_STANAG_30Rnd_White"
+		};
+	};
+
+	/* Paint Classes */
 
   class AKS74U;
 	class RPL_AKS74U_PaintBase : AKS74U
@@ -446,7 +547,7 @@ class CfgWeapons
 	class M4A1;
 	class RPL_M4A1_PaintBase : M4A1
 	{
-		scope = 2;
+		scope = 0;
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {""};
 	};
@@ -459,10 +560,4 @@ class CfgWeapons
 		magazines[] = {"RPL_Mag_FMAG_10Rnd"};
 		drySound[] = {"dz\sounds\weapons\firearms\FNX45\FNX_dry",0.5,1,20};
 	};
-
-};
-
-class CfgMagazines
-{
-
 };
