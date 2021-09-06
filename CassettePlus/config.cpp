@@ -126,6 +126,19 @@ class CfgSoundShaders
 	{
 		samples[] = {{"CassettePlus\tracks\cassetteplayer_turn_on",1}};
 	};
+	class RPL_WalkieTalkieOn_Shader: RPL_Cassette_SoundShader_Base
+	{
+		samples[] = {{"CassettePlus\tracks\walkietalkie_on_mo",1}};
+	};
+	class RPL_WalkieTalkieOff_Shader: RPL_Cassette_SoundShader_Base
+	{
+		samples[] = {{"CassettePlus\tracks\walkietalkie_off_mo",1}};
+	};
+	class RPL_RussianChatter_Shader: RPL_Cassette_SoundShader_Base
+	{
+		samples[] = {{"CassettePlus\tracks\chatter_ru_mo",1}};
+	};
+	
 	class RPL_AyYayYay_Shader: RPL_Cassette_SoundShader_Base
 	{
 		samples[] = {{"CassettePlus\tracks\track_ayyayyay_mo",1}};
@@ -353,6 +366,19 @@ class CfgSoundSets
 	{
 		soundShaders[] = {"RPL_TurnOn_Shader"};
 	};
+	class RPL_SoundSet_WalkieTalkieOn
+	{
+		soundShaders[] = {"RPL_WalkieTalkieOn_Shader"};
+	};
+	class RPL_SoundSet_WalkieTalkieOff
+	{
+		soundShaders[] = {"RPL_WalkieTalkieOff_Shader"};
+	};
+	class RPL_SoundSet_RussianChatter
+	{
+		soundShaders[] = {"RPL_RussianChatter_Shader"};
+	};
+
 	class RPL_SoundSet_AyYayYay
 	{
 		soundShaders[] = {"RPL_AyYayYay_Shader"};
@@ -637,6 +663,50 @@ class CfgVehicles
 				{
 					hitpoints = 100;
 					healthLevels[] = {{1,{"DZ\gear\radio\data\unitra_wilga.rvmat"}},{0.7,{"DZ\gear\radio\data\unitra_wilga.rvmat"}},{0.5,{"DZ\gear\radio\data\unitra_wilga_damage.rvmat"}},{0.3,{"DZ\gear\radio\data\unitra_wilga_damage.rvmat"}},{0,{"DZ\gear\radio\data\unitra_wilga_destruct.rvmat"}}};
+				};
+			};
+		};
+	};
+	class RPL_PersonalRadio: RPL_Radio_Base
+	{
+		scope = 2;
+		displayName = "$STR_CfgVehicles_PersonalRadio0";
+		descriptionShort = "$STR_CfgVehicles_PersonalRadio1";
+		lootTag[] = {"Police","Hunting","Camping","Military_east"};
+		model = "\dz\gear\radio\WalkieTalkie.p3d";
+		weight = 750;
+		absorbency = 0.5;
+		itemSize[] = {1,3};
+		inventorySlot[] = {"WalkieTalkie"};
+		rotationFlags = 1;
+		oldpower = 0;
+		isMeleeWeapon = 1;
+		class MeleeModes
+		{
+			class Default
+			{
+				ammo = "MeleeLightBlunt";
+				range = 1.0;
+			};
+			class Heavy
+			{
+				ammo = "MeleeLightBlunt_Heavy";
+				range = 1.0;
+			};
+			class Sprint
+			{
+				ammo = "MeleeLightBlunt_Heavy";
+				range = 2.8;
+			};
+		};
+		class DamageSystem
+		{
+			class GlobalHealth
+			{
+				class Health
+				{
+					hitpoints = 50;
+					healthLevels[] = {{1.0,{"DZ\gear\radio\data\WalkieTalkie.rvmat"}},{0.7,{"DZ\gear\radio\data\WalkieTalkie.rvmat"}},{0.5,{"DZ\gear\radio\data\WalkieTalkie_damage.rvmat"}},{0.3,{"DZ\gear\radio\data\WalkieTalkie_damage.rvmat"}},{0.0,{"DZ\gear\radio\data\WalkieTalkie_destruct.rvmat"}}};
 				};
 			};
 		};
@@ -1241,6 +1311,16 @@ class CfgVehicles
 		class CfgCassette
 		{
 			soundSet = "RPL_SoundSet_DevushkaMechty";
+		};
+	};
+
+	class RPL_Cassette_RussianChatter: RPL_Cassette_Base
+	{
+		scope = 2;
+		hiddenSelectionsTextures[] = {"CassettePlus\data\kazeta_blank_co.paa"};
+		class CfgCassette
+		{
+			soundSet = "RPL_SoundSet_RussianChatter";
 		};
 	};
 };
